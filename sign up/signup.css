@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f6fa;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.container a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+} 
+.d-flex{
+    display: flex;
+}
+.pb-180{
+    padding-bottom: 180px;
+}
+.pt-140{
+    padding-top: 140px;
+}
+
+/*-----------------------------------  header  ----------------------------------*/
+.container img{
+    cursor: pointer;
+}
+.navbar {
+    background-color: #fff;
+}
+form a {
+    text-decoration: none;
+}
+/* ------------------------------------ sign-up Form ------------------------------ */
+.signup-form{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(10, 2, 55, .06);
+    padding: 40px 40px 40px 7px;
+    border-radius: 10px;
+}
+.form-left img{
+    width: 100%;
+    height: 100%;
+}
+.form-right{
+    padding: 0 0 0 20px;
+}
+.form-text{
+    padding: 0 0 2px;
+}
+.form-text h2{
+    color: #2c234d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 750;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.form-text{
+    color: #505056;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+.text-editor{
+    margin: -5px 0 0;
+    padding: 0 0 10px;
+}
+.text-editor p {
+    color: #505056;
+}
+.name-box{
+    margin-right: 18px;
+}
+.username-box{
+    margin-left: 18px;
+}
+.error{
+    color: red;
+    font-size: 16px;
+}
+.name-box , .username-box{
+    max-width: 280px;
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f7;
+    border-radius: 5px;
+    display: grid;
+    margin-bottom: 5px;
+}
+.email-box{
+    font-size: 14px;
+}
+.email-box, .pass-box{
+    max-width: 600px;
+    width: 100%;
+    height: 75px;
+    background-color: #f5f5f7;
+    border-radius: 5px;
+    display: grid;
+    margin: 0 0 20px;
+}
+.form-input .input-text{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 20px;    
+    color: #7e7c87;
+    padding: 0 30px 0 25px;
+}
+.input-checkbox{
+    margin: -6px 0 25px;
+}
+.from-checkbox{
+    position: relative;
+}
+.from-checkbox label span{
+    padding: 0 0 0 6px;
+    font-size: 16px;
+    color: #505056;
+}
+.input-btn button{
+    padding: 8px 35px;
+    display: inline-block;
+}
+/*---------------------------------- Footer -----------------------------------*/
+.footer-area {
+    padding: 60px 0;
+    background-color: #eef1f6;
+}
+.f-1 {
+    padding-right: 70px;
+}
+.f-1 a {
+    font-size: 15px;
+}
+.f-1 .social ul li a {
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    color: #000;
+    margin-right: 5px;
+    border-radius: 6px;
+    display: inline-block;
+    line-height: 36px;
+    text-align: center;
+    transition: all 0.8s ease-in-out;
+}
+.f-1 .social ul li a:hover {
+    background-color: #2b70fa;
+    color: #fff;
+}
+.f-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.footer-nav ul li {
+    padding-bottom: 6px;
+}
+.footer-nav ul li a {
+    font-weight: 500;
+    color: #505056;
+    text-decoration: none;
+}
+.f-contact ul li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.f-contact ul li a i {
+    font-size: 25px;
+    padding-right: 15px;
+}

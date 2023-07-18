@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/media.css" type="text/css">
+    <link rel="stylesheet" href="login.css" type="text/css">
+</head>
+
+<body>
+    <!-------------------------------------------- header ------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light  mb-5">
+            <div class="container">
+                <a href="../index.html">
+                    <img class="p-4 pe-5" src="../img/logo.png" alt="image not found">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-dark fs-6 px-3" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Home 2</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Home 3</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Home 4</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  text-dark fs-6 px-3" aria-current="page"
+                                href="../index.html">Service</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  text-dark fs-6 px-3" aria-current="page" href="../index.html">Team </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark fs-6 px-3" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                New
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../index.html">Plan</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Blog</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  text-dark fs-6 px-3" aria-current="page"
+                                href="../index.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form>
+                        <a class=" login-btn p-3 fs-5 text-dark" href="login.html">
+                            <i class="far fa-user p-2"></i>
+                            <b>Login</b>
+                        </a>
+                        <a href="../sign up/signup.html" type="button" class="btn btn-outline-primary btn-lg">Get
+                            Started</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---------------------------------------- log-in Form ------------------------------------------>
+    <section class="login-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="login-form col-12 my-5 d-flex">
+                    <div class="col-lg-6 mt-5 mb-5">
+                        <div class="form-left">
+                            <img src="../img/Frame-1.png" alt="image not found">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-right">
+                            <form action="" onsubmit="return validateLogin()" class="login">
+                                <div class="form-text">
+                                    <h2>Log In</h2>
+                                </div>
+                                <div class="form-text">
+                                    <div class="text-editor">
+                                        <p>Looking for help? Fill the form and start a new adventure.</p>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <div class="username-box">
+                                        <input id="username" name="username" type="text" placeholder="Username"
+                                            class="input-text">
+                                    </div>
+                                    <p id="userError" class="error"></p>
+                                    <div class="pass-box">
+                                        <input id="password" name="password" type="password" placeholder="Password"
+                                            class="input-text">
+                                    </div>
+                                    <p id="passError" class="error"></p>
+                                    <div class="from-checkbox">
+                                        <label>
+                                            <input id="checkbox" name="rememberme" type="checkbox" class="input-checkbox">
+                                            <span>Remember Me</span>
+                                        </label>
+                                        <a class="forgot-pass d-block mt-4" target="_self" href="#">
+                                            Forgot Password ?
+                                        </a>
+                                    </div>
+                                    <p id="checkboxError" class="error"></p>
+                                    <div class="input-btn">
+                                        <button class="btn btn-outline-primary btn-lg mt-2 mb-5" type="submit">
+                                            Login
+                                        </button>
+                                        <a class="signup-btn d-block " target="_self" href="../sign up/signup.html">
+                                            Create a new account
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------- Footer -------------------------------------------->
+    <footer>
+        <div class="footer-area mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="f-1 mt-4">
+                            <img src="../img/logo.png" class="img-fluid">
+                            <p class="gray pt-4">Appie WordPress is theme is the last theme you will ever have.</p>
+                            <a href="js:" class="btn p-0">Read More <i class="fas fa-arrow-right ps-2"></i></a>
+                            <div class="social mt-4">
+                                <ul class="list-unstyled d-flex">
+                                    <li><a href="../index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="../index.html"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="../index.html"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="../index.html"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-nav mt-4">
+                            <h4 class="f-title">Company</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="../index.html">About Us</a></li>
+                                <li><a href="../index.html">Services</a></li>
+                                <li><a href="../index.html">Case Studies</a></li>
+                                <li><a href="../index.html">Blog</a></li>
+                                <li><a href="../index.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-nav mt-4">
+                            <h4 class="f-title">Support</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="../index.html">Community</a></li>
+                                <li><a href="../index.html">Resources</a></li>
+                                <li><a href="../index.html">Faqs</a></li>
+                                <li><a href="../index.html">Privacy Policy</a></li>
+                                <li><a href="../index.html">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="f-contact mt-4">
+                            <h4 class="f-title">Get In Touch</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="js:"><i class="far fa-envelope"></i></a><span>support@appie.com</span></li>
+                                <li><a href="js:"><i class="fas fa-phone-alt"></i></a><span>+91 88660 01957 </span></li>
+                                <li><a href="js:"><i class="fas fa-map-marker-alt"></i></a><span>442 Belle Terre St
+                                        Floor 7,SanFrancisco, AV4206</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom d-flex justify-content-between mt-5 pt-5 border-top">
+                            <div class="f-btn">
+                                <a href="#" class="py-2 px-3 btn btn-dark me-3 mb-3">
+                                    <i class="fab fa-apple"></i>
+                                    Download for iOS
+                                </a>
+                                <a href="#" class="py-2 px-3 btn btn-outline-dark mb-3">
+                                    <i class="fab fa-google-play"></i>
+                                    Download for Android
+                                </a>
+                            </div>
+                            <div class="copyright">
+                                <p>Copyright © 2021 Appie. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ---------------- script---------------------- -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
